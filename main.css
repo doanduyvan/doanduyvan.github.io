@@ -24,10 +24,11 @@ td.the_wheel
 }
 
 .tailieu{
-align: center ;
+text-align: center ;
 }
 .tieude{
 color: yellow;
+    text-decoration: none;
 }
 /* Do some css reset on selected elements */
 h1, p
