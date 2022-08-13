@@ -10,13 +10,16 @@
 </head>
 
 <body>
-    <p> test thử </p>
+    <div>
+        <a class="tieude" hrel="" >QUAY SỐ</a>
+        <a class="tieude" hrel="" >MAY MẮN</a>
+    </div>
     <div align="center">
         <table cellpadding="0" cellspacing="0" border="0">
             <tr>
                 <td align="center" width="200">
                     <input type="text" id="tena" class="ten" placeholder="Nhập Tên Bạn"><br><br>
-                    <input type="text" id="tenb" class="ten" placeholder="Nhập Tên Người Yêu Bạn"><br><br>
+                  /*  <input type="text" id="tenb" class="ten" placeholder="Nhập Tên Người Yêu Bạn"><br><br> */
                     <button id="spin_start" class="btn" onClick="startSpin();">Thử Ngay Nào</button> <br><br>
                     <button id="spin_reset" class="btn" onClick="resetWheel();">Thử Lại</button>
                 </td>
@@ -35,7 +38,7 @@
             </tr>
         </table>
         <div>
-            <a> hi </a>
+          
         
         </div>
     </div>
@@ -118,30 +121,34 @@
             // var n = document.getElementById('tenb').value;
             // alert(innerHTML= a + " và " + n + indicatedSegment.text);
             // phần tự chỉnh
-            var one = " sẽ yêu nhau.";
-            var two = " đến được với nhau.";
-            var three = " sẽ yêu nhau";
-            var four = " đến được với nhau";
+            var one = " Câu A ";
+            var two = " Câu B ";
+            var three = " Câu C ";
+            var four = " Câu D ";
             if (indicatedSegment.text == one) {
                 var a = document.getElementById('tena').value;
-                var b = document.getElementById('tenb').value;
-                document.getElementById('demo').innerHTML= "Chúc mừng " + a + " và " + b + " trong năm nay sẽ yêu nhau";
-                 src="phaohoa.js";
+               // var b = document.getElementById('tenb').value;
+               // document.getElementById('demo').innerHTML= "Chúc mừng " + a + " và " + b + " trong năm nay sẽ yêu nhau";
+                document.getElementById('demo').innerHTML= a + " chọn câu A " ;
+                // src="phaohoa.js";
             }
             if (indicatedSegment.text == two) {
                 var a = document.getElementById('tena').value;
-                var b = document.getElementById('tenb').value;
-                document.getElementById('demo').innerHTML= "Thôi đừng buồn " + a + " và " + b + " kiếp này không đến được với nhau đâu" ;
+               // var b = document.getElementById('tenb').value;
+              //  document.getElementById('demo').innerHTML= "Thôi đừng buồn " + a + " và " + b + " kiếp này không đến được với nhau đâu" ;
+                document.getElementById('demo').innerHTML= a + " chọn câu B " ;
             }
             if (indicatedSegment.text == three) {
                 var a = document.getElementById('tena').value;
-                var b = document.getElementById('tenb').value;
-                document.getElementById('demo').innerHTML= "Chúc mừng " + a + " và " + b + " trong vài năm tới sẽ yêu nhau";
+              //  var b = document.getElementById('tenb').value;
+             //   document.getElementById('demo').innerHTML= "Chúc mừng " + a + " và " + b + " trong vài năm tới sẽ yêu nhau";
+                document.getElementById('demo').innerHTML= a + " chọn câu C " ;
             }
             if (indicatedSegment.text == four) {
                 var a = document.getElementById('tena').value;
-                var b = document.getElementById('tenb').value;
-                document.getElementById('demo').innerHTML= "Bỏ ý định luôn đi " + a + " à, mày và " + b + " suốt kiếp cũng không đến được với nhau";
+              //  var b = document.getElementById('tenb').value;
+              //  document.getElementById('demo').innerHTML= "Bỏ ý định luôn đi " + a + " à, mày và " + b + " suốt kiếp cũng không đến được với nhau";
+                document.getElementById('demo').innerHTML= a + " chọn câu D " ;
             }
             // else {
             //     alert("Bớt Mê Tín Dị Đoan lại nhé");
