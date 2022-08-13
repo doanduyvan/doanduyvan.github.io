@@ -23,6 +23,12 @@ td.the_wheel
     background-repeat: none;
 }
 
+.tailieu{
+align: center ;
+}
+.tieude{
+color: yellow;
+}
 /* Do some css reset on selected elements */
 h1, p
 {
